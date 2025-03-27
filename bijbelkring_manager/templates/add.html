@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Group</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Add Bible Study Group</h1>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Group Name" required>
+        <input type="text" name="topic" placeholder="Topic" required>
+        <input type="date" name="date" required>
+        <textarea name="description" placeholder="Description"></textarea>
+        <button type="submit">Add Group</button>
+    </form>
+    <a href="{{ url_for('home') }}">Back</a>
+</body>
+</html>
